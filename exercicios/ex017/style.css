@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+p {
+    /* Shoirthand font */
+    /* font-size -> font-family */
+    font: 1em Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+h1 {
+    /* Shoirthand font */
+    /* font-style -> font-weight -> font-size -> font-family */
+    font: italic bold 2em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+h2 {
+    /* Shoirthand font */
+    /* font-weight -> font-size -> font-family */
+    font: bold 2em sans-serif;
+    text-align: left;
+}

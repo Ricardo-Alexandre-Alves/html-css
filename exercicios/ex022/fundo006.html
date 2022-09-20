@@ -4,23 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posicionamento de background</title>
+    <title>Posicionamento de background fixo</title>
     <style>
         body {
             height: 100vh;
+            
+            /*
             background-color: #000000;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
+
+            /* Shorthand tem que ter color, imagem, position, repeat e attachment */
+            background: #000000 url('imagens/wallpaper002.jpg') center center no-repeat  fixed;
+
+            /* a background size não pode ir junto no shorthand pois faz a imagem não carregar, por isso fica fora e entra a parte */
+            background-size: cover;
+            
         }
         main {
             background-color: #ffffff;
-            width: 400px;
             padding: 10px;
             margin: auto;
             border: 2px solid #2102a8;
             border-radius: 10px;
+            max-width: 700px;
         }
 
         main h1 {

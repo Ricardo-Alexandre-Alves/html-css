@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input#inome, #isobrenome {
+            border-radius: 3px;
+            border: 1px solid black;
+            padding: 3px 0px 3px 3px ;
+        }
+        input {
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!--Método GET / aparece na URL
+    <form autocomplete="off" method="get" action="cadastro.php">
+        <p>
+            <label for="inome">Nome: </label><br>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome: </label><br>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+
+    -->
+
+    <!--Método POST / não aparece na URL mas aparece no payload-->
+    <form autocomplete="off" method="post" action="cadastro.php">
+        <p>
+            <label for="inome">Nome: </label><br>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome: </label><br>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
